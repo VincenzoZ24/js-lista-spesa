@@ -10,6 +10,11 @@ for (i = 0; i < arrListaSpesa.length; i++) {
 
 eleForm.addEventListener('submit', function (event) {
     event.preventDefault();
-    arrListaSpesa.push(eleText.value);
-
+    if(eleText.value != ""){
+        arrListaSpesa.push(eleText.value);
+        document.querySelector(".lista_spesa").innerHTML += `<li>${eleText.value}</li>`;
+        eleText.value = "";
+    
+    };
+   
 })
