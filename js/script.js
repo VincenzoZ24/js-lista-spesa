@@ -7,7 +7,7 @@ let listaSpesa = document.querySelector("lista_spesa");
 //     listaSpesa.innerHTML += `<li>${arrListaSpesa[i]}</li>`
 
 // }
-i=0;
+let i=0;
 while (i < arrListaSpesa.length) {
     listaSpesa.innerHTML += `<li>${arrListaSpesa[i]}</li>`
     i++;
@@ -22,4 +22,4 @@ eleForm.addEventListener('submit', function (event) {
     
     };
    
-})
+});
